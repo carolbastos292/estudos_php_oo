@@ -3,7 +3,7 @@ class Conn{
   public static $host = "localhost";
   public static $user = "root";
   public static $pass = "";
-  public static $dbName = "celke";
+  public static $dbName = "bd_teste";
   private static $connect = null;
 
   private static function Conectar(){
