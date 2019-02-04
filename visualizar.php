@@ -11,12 +11,14 @@
     <?php
       require './Conn.php';
 
-      $id = 2;
+      $id = 1;
+      $limit = 1;
       $conn = new Conn();
-      $result_user = "SELECT * FROM usuarios where id=:id LIMIT id=:id";
+      $result_user = "SELECT * FROM usuarios where id=:id LIMIT :limit";
 
       $resultado_user =  $conn->getConn()->prepare($result_user);
-      $resultado_user->bindParam(':id', $id, PDO::PARAM_STR);
+      $resultado_user->bindParam(':id', $id, PDO::PARAM_INT);
+      $resultado_user->bindParam(':limit', $limit, PDO::PARAM_INT);
       $resultado_user->execute();
 
       $row_user = $resultado_user->fetch(PDO::FETCH_ASSOC);
