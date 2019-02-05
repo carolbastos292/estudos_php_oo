@@ -30,9 +30,9 @@ class ConfigController {
     }
 
     public function carregar(){
-      $class = "\\Sts\\Controllers\\".$this->$UrlControlle;
+      $class = "\\Sts\\Controllers\\".$this->UrlControlle;
       //instancia a classe
-      $classeCarregar = new $classe;
+      $classeCarregar = new $class;
       //pega o objeto classeCarregar e chama o metodo index
       $classeCarregar->index();
     }
