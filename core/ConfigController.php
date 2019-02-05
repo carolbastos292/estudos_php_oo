@@ -2,11 +2,6 @@
 
 namespace Core;
 
-/**
- * Description of ConfigController
- *
- * @copyright (c) year, Cesar Szpak - Celke
- */
 class ConfigController {
 
     private $Url;
@@ -31,10 +26,10 @@ class ConfigController {
             $this->UrlMetodo = 'index';
         }
 
-        echo "Classe: {$this->UrlControlle} - Método: {$this->UrlMetodo} <br>";
+        //echo "Classe: {$this->UrlControlle} - Método: {$this->UrlMetodo} <br>";
         //echo "URL: {$this->Url} <br>";
     }
-    
+
     public function carregar() {
         $classe = "\\Sts\\Controllers\\".$this->UrlControlle;
         $classeCarregar = new $classe;

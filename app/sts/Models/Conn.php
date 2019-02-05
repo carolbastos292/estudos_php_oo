@@ -1,4 +1,7 @@
 <?php
+namespace Sts\Models;
+use PDO;
+
 class Conn{
   public static $host = "localhost";
   public static $user = "root";
