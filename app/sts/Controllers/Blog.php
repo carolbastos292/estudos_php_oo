@@ -1,10 +1,15 @@
 <?php
-  namespace Sts\Controllers;
 
-  class Blog{
+namespace Sts\Controllers;
+/**
+ * Description of Blog
+ *
+ * @copyright (c) year, Cesar Szpak - Celke
+ */
+class Blog {
 
-    public function index(){
-      echo "Controller da pagina blog";
+    public function index() {
+        echo "Controller da página blog<br>";
+        
     }
-  }
- ?>
+}
